@@ -7,6 +7,13 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'add_entry.html'
 })
 export class AddEntryPage {
+
+  item: {
+    date: '',
+    price: 0,
+    bill_number: ''
+  };
+
   selectedItem: any;
   icons: string[];
   items: Array<{title: string, note: string, icon: string}>;
@@ -35,4 +42,10 @@ export class AddEntryPage {
       item: item
     });
   }
+
+  save() {
+    console.log('add_entry::save');
+    console.log(this.item);
+  }
+
 }

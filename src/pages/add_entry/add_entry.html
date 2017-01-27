@@ -8,5 +8,26 @@
 </ion-header>
 
 <ion-content>
+  <ion-list>
 
+    <ion-item>
+      <ion-label stacked>Date</ion-label>
+      <ion-input [(ngModel)]="item.date" type="date"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Price</ion-label>
+      <ion-input [(ngModel)]="item.price" type="number"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Price</ion-label>
+      <ion-input [(ngModel)]="item.bill_number" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <button (click)="save()" ion-button>Save</button>
+    </ion-item>
+
+  </ion-list>
 </ion-content>
