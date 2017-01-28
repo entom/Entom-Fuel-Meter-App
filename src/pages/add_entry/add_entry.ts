@@ -8,7 +8,7 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class AddEntryPage {
 
-  item: {
+  item = {
     date: '',
     price: 0,
     bill_number: ''

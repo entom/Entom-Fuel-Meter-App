@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Add entry</ion-title>
+    <ion-title>{{'Add entry' | translate}}</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -11,22 +11,22 @@
   <ion-list>
 
     <ion-item>
-      <ion-label stacked>Date</ion-label>
+      <ion-label stacked>{{'Date' | translate}}</ion-label>
       <ion-input [(ngModel)]="item.date" type="date"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label stacked>Price</ion-label>
+      <ion-label stacked>{{'Price' | translate}}</ion-label>
       <ion-input [(ngModel)]="item.price" type="number"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label stacked>Price</ion-label>
+      <ion-label stacked>{{'Bill number' | translate}}</ion-label>
       <ion-input [(ngModel)]="item.bill_number" type="text"></ion-input>
     </ion-item>
 
     <ion-item>
-      <button (click)="save()" ion-button>Save</button>
+      <button (click)="save()" ion-button>{{'Save' | translate}}</button>
     </ion-item>
 
   </ion-list>
